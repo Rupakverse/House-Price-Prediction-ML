@@ -56,18 +56,64 @@ Example visualizations include:
 ---
 
 📁 Project Structure
-bash
-Copy
-Edit
 House-Price-Prediction-ML/
-├── app.py                      # Streamlit app frontend
-├── house_price_prediction.py   # Model training and evaluation script
-├── model.pkl                   # Saved trained model file
-├── data/
-│   └── house_data.csv          # Dataset CSV file
-├── .gitignore
-├── requirements.txt            # Python dependencies
-└── README.md                   # Project documentation
+ app.py                      # Streamlit app frontend
+ house_price_prediction.py   # Model training and evaluation script
+ model.pkl                   # Saved trained model file
+ data/
+ ouse_data.csv          # Dataset CSV file
+ .gitignore
+ requirements.txt            # Python dependencies
+ README.md                   # Project documentation
+
+
+ # 🏠 How to Run the House Price Prediction App
+
+This guide will walk you through the steps to **set up**, **install dependencies**, and **run** the House Price Prediction web app built with Python and Streamlit.
+
+---
+
+## ⚙️ Prerequisites
+
+Make sure you have the following installed:
+
+- ✅ Python 3.8 or higher
+- ✅ Git (optional, if cloning repo)
+- ✅ pip (Python package manager)
+
+---
+
+ 1. Clone or Download the Project
+
+If you haven't already:
+
+git clone https://github.com/Rupakverse/House-Price-Prediction-ML.git
+cd House-Price-Prediction-ML
+ 
+ 2. Set Up a Virtual Environment (Recommended)
+ python -m venv .venv
+Activate the virtual environment:.\.venv\scripts\activate
+
+3. Install Dependencies
+If you have a requirements.txt:
+
+pip install -r requirements.txt
+
+4. Train the Model (If Not Already Trained)
+Run this to train and save the model as model.pkl:
+
+python house_price_prediction.py
+
+5. run the streamlit app
+Now launch the web interface:
+streamlit run app.py
+This will open the app in your default web browser.
+
+6. Deactivate Virtual Environment (When Done)
+deactivate
+
+
+
 
 Author
 Rupak Lamichhane
